@@ -3,7 +3,7 @@
 -include_lib("eunit/include/eunit.hrl").
 
 fac(N)-> N * fac(N-1);
-fac(1) -> fail.
+fac(0) -> 1.
 
 -ifdef(EUNIT).
 -include_lib("eunit/include/eunit.hrl").
